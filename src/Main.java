@@ -17,17 +17,6 @@ public class Main {
 
     }
 
-    public static int[] init(int count) {
-
-        int[] result = new int[count];
-
-        for (int i = count - 1; i >= 0; i--) {
-            result[count - i - 1] = i;
-        }
-
-        return result;
-    }
-
     public static BstNode insert(BstNode root, int val, int[] result, int sum, int i) {
         if (root == null) {
             result[i] = sum;
@@ -46,8 +35,6 @@ public class Main {
         }
         return root;
     }
-
-
 }
 
 
